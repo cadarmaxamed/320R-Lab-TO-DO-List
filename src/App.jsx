@@ -4,7 +4,7 @@ import TodoList from './TodoList.jsx';
 
 function App() {
   const [tasks, setTasks] = useState([]);
-  const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+  const daysOfWeek = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
   const addTask = (task, day) => {
     const newTask = { task, day };
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Weekday Routine To-Do List</h1>
+      <h1>Weekly To-Do List</h1>
       {daysOfWeek.map(day => (
         <TodoList key={day} day={day} tasks={tasks.filter(task => task.day === day)} addTask={addTask} />
       ))}

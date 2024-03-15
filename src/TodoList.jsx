@@ -18,8 +18,8 @@ const TodoList = ({ day, tasks, addTask }) => {
           <li key={index}>{task.task}</li>
         ))}
       </ul>
-      <input
-        type="text"
+      <input 
+        type="checked"
         placeholder="Add new task"
         value={taskInput}
         onChange={(e) => setTaskInput(e.target.value)}

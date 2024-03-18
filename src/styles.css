@@ -1,5 +1,10 @@
+body{
+  background-color: lightsteelblue;
+}
 .App {
   text-align: center;
+  align-content: center;
+  background-color: aliceblue;
 }
 
 input[type="text"] {
